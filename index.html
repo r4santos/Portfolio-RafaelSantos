@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Lima Santos Pereira | Portfólio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <canvas id="particles-canvas" class="particles-background"></canvas>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="img/R4 logo.png" alt="Rafael Logo" class="logo-img">
+        </div>
+        <nav class="nav-desktop">
+          <button class="nav-link" data-scroll="about" data-i18n="nav.about">Sobre</button>
+          <button class="nav-link" data-scroll="experience" data-i18n="nav.experience">Experiência</button>
+          <button class="nav-link" data-scroll="skills" data-i18n="nav.skills">Habilidades</button>
+          <button class="nav-link" data-scroll="projects" data-i18n="nav.projects">Projetos</button>
+          <button class="nav-link" data-scroll="contact" data-i18n="nav.contact">Contato</button>
+          <div class="nav-divider"></div>
+          <button id="language-toggle" class="language-btn">EN</button>
+        </nav>
+        <div class="nav-mobile">
+          <button id="language-toggle-mobile" class="language-btn">EN</button>
+          <button id="menu-toggle" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container">
+        <button class="nav-link-mobile" data-scroll="about" data-i18n="nav.about">Sobre</button>
+        <button class="nav-link-mobile" data-scroll="experience" data-i18n="nav.experience">Experiência</button>
+        <button class="nav-link-mobile" data-scroll="skills" data-i18n="nav.skills">Habilidades</button>
+        <button class="nav-link-mobile" data-scroll="projects" data-i18n="nav.projects">Projetos</button>
+        <button class="nav-link-mobile" data-scroll="contact" data-i18n="nav.contact">Contato</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-subtitle" data-i18n="hero.title">Olá, eu sou</p>
+          <h1 class="hero-title">Rafael Lima Santos Pereira</h1>
+          <h2 class="hero-role" data-i18n="hero.subtitle">Desenvolvedor</h2>
+          <p class="hero-description" data-i18n="hero.description">
+            Apaixonado por tecnologia, busco oportunidades na área de desenvolvimento de software (web, mobile e backend), contribuindo com trabalho em equipe, comunicação e proatividade.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" data-scroll="contact">Contato</button>
+            <button class="btn btn-outline" data-scroll="projects">Projetos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">Sobre Mim</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description" data-i18n="about.description">
+              Sou um desenvolvedor com experiência em desenvolvimento web, mobile e backend. Atualmente, estou cursando Técnico em Informática no COTEMIG com previsão de conclusão em 2025.
+            </p>
+            <div class="code-block">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                </div>
+                <span class="code-title">about.js</span>
+                <div class="code-lang">
+                  <span>javascript</span>
+                  <button class="copy-btn">Copy</button>
+                </div>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="line"><span class="line-number">1</span><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+<span class="line"><span class="line-number">2</span>  <span class="string">name</span>: <span class="string">'Rafael Lima Santos Pereira'</span>,</span>
+<span class="line"><span class="line-number">3</span>  <span class="string">location</span>: <span class="string">'Nova Lima, MG'</span>,</span>
+<span class="line"><span class="line-number">4</span>  <span class="string">education</span>: <span class="string">'Técnico em Informática - COTEMIG (2025)'</span>,</span>
+<span class="line"><span class="line-number">5</span>  <span class="string">interests</span>: [<span class="string">'Web Development'</span>, <span class="string">'Mobile Development'</span>, <span class="string">'Backend'</span>],</span>
+<span class="line"><span class="line-number">6</span>  <span class="string">contact</span>: {</span>
+<span class="line"><span class="line-number">7</span>    <span class="string">email</span>: <span class="string">'rafaelsantoslp11@gmail.com'</span>,</span>
+<span class="line"><span class="line-number">8</span>    <span class="string">phone</span>: <span class="string">'(31) 9 9833-5697'</span></span>
+<span class="line"><span class="line-number">9</span>  }</span>
+<span class="line"><span class="line-number">10</span>};</span></code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-content">
+              <div class="emoji">👨‍💻</div>
+              <h3 class="about-card-title">Developer</h3>
+              <p class="about-card-subtitle">Web • Mobile • Backend</p>
+            </div>
+            <div class="floating-emoji">🚀</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="experience.title">Experiência</h2>
+        <div class="experience-cards">
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title" data-i18n="experience.tech-lead">Tech Lead</h3>
+                <p class="experience-company">PITCH</p>
+              </div>
+              <div class="experience-year">2025</div>
+            </div>
+            <p class="experience-description" data-i18n="experience.tech-lead-description">
+              Desenvolvimento de app para aluguel de quadras, com integração de tecnologias e programação mobile.
+            </p>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Mobile Development</span>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title" data-i18n="experience.monitor">Monitor</h3>
+                <p class="experience-company">Code Club</p>
+              </div>
+              <div class="experience-year">2025</div>
+            </div>
+            <p class="experience-description" data-i18n="experience.monitor-description">
+              Auxílio no ensino de tecnologia para crianças.
+            </p>
+            <div class="tags">
+              <span class="tag">Teaching</span>
+              <span class="tag">Programming</span>
+              <span class="tag">Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills.title">Habilidades</h2>
+        <div class="skills-content">
+          <div class="skills-column">
+            <h3 class="skills-subtitle" data-i18n="skills.languages">Linguagens</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span class="code-dot red"></span>
+                  <span class="code-dot yellow"></span>
+                  <span class="code-dot green"></span>
+                </div>
+                <span class="code-title">languages.js</span>
+                <div class="code-lang">
+                  <span>javascript</span>
+                  <button class="copy-btn">Copy</button>
+                </div>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="line"><span class="line-number">1</span><span class="keyword">const</span> <span class="variable">languages</span> = [</span>
+<span class="line"><span class="line-number">2</span>  <span class="string">'PHP (Laravel)'</span>,</span>
+<span class="line"><span class="line-number">3</span>  <span class="string">'Dart (Flutter)'</span>,</span>
+<span class="line"><span class="line-number">4</span>  <span class="string">'C#'</span>,</span>
+<span class="line"><span class="line-number">5</span>  <span class="string">'Swift'</span>,</span>
+<span class="line"><span class="line-number">6</span>  <span class="string">'Kotlin'</span>,</span>
+<span class="line"><span class="line-number">7</span>  <span class="string">'Python'</span>,</span>
+<span class="line"><span class="line-number">8</span>  <span class="string">'TypeScript'</span>,</span>
+<span class="line"><span class="line-number">9</span>  <span class="string">'HTML'</span>,</span>
+<span class="line"><span class="line-number">10</span>  <span class="string">'CSS'</span>,</span>
+<span class="line"><span class="line-number">11</span>  <span class="string">'JavaScript'</span></span>
+<span class="line"><span class="line-number">12</span>];</span></code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3 class="skills-subtitle" data-i18n="skills.os">Sistemas Operacionais</h3>
+            <div class="os-grid">
+              <div class="os-item">
+                <div class="os-icon">🪟</div>
+                <h4 class="os-name">Windows 10/11</h4>
+              </div>
+              <div class="os-item">
+                <div class="os-icon">🍎</div>
+                <h4 class="os-name">macOS</h4>
+              </div>
+              <div class="os-item">
+                <div class="os-icon">🐧</div>
+                <h4 class="os-name">Ubuntu</h4>
+              </div>
+              <div class="os-item">
+                <div class="os-icon">🐧</div>
+                <h4 class="os-name">Linux</h4>
+              </div>
+            </div>
+
+            <h3 class="skills-subtitle mt-4" data-i18n="skills.languages-spoken">Idiomas</h3>
+            <div class="language-skills">
+              <div class="language-skill">
+                <div class="language-header">
+                  <h4 class="language-name">Inglês</h4>
+                  <span class="language-level">Avançado</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="language-skill">
+                <div class="language-header">
+                  <h4 class="language-name">Espanhol</h4>
+                  <span class="language-level">Intermediário</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="skills-subtitle mt-4" data-i18n="skills.databases">Bancos de Dados</h3>
+            <div class="database-skill">
+              <div class="database-icon">🗄️</div>
+              <div class="database-info">
+                <h4 class="database-name">MySQL</h4>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects.title">Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/App de Aluguel de Quadras.png" alt="App de Aluguel de Quadras">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">App de Aluguel de Quadras</h3>
+              <p class="project-description">Aplicativo mobile para reserva e aluguel de quadras esportivas.</p>
+              <div class="project-tags">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Dart</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <a href="#" class="project-link" data-i18n="projects.view">Ver Projeto</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/Sistema de Gestão Escolar.jpg" alt="Sistema de Gestão Escolar">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Gestão Escolar</h3>
+              <p class="project-description">Sistema web para gerenciamento de alunos, professores e notas.</p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">Laravel</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <a href="#" class="project-link" data-i18n="projects.view">Ver Projeto</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/Portfólio Pessoal.png" alt="Portfólio Pessoal">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfólio Pessoal</h3>
+              <p class="project-description">Site pessoal para apresentação de projetos e habilidades.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <a href="#" class="project-link" data-i18n="projects.view">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact.title">Contato</h2>
+        <div class="contact-content">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.name">Nome</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="contact.email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i>
+              <span data-i18n="contact.send">Enviar</span>
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Rafael Lima Santos Pereira</h3>
+              <div class="contact-details">
+                <div class="contact-detail">
+                  <div class="contact-icon">📱</div>
+                  <p class="contact-text">(31) 9 9833-5697</p>
+                </div>
+                <div class="contact-detail">
+                  <div class="contact-icon">📧</div>
+                  <p class="contact-text">rafaelsantoslp11@gmail.com</p>
+                </div>
+              </div>
+              <a href="https://wa.me/5531998335697?text=Olá%20Rafael,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="contact.whatsapp">Enviar mensagem via WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; <span id="current-year">2023</span> - <span data-i18n="footer.rights">Todos os direitos reservados a Rafael Lima Santos Pereira</span></p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
