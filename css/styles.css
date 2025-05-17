@@ -420,7 +420,7 @@ body {
 
 .code-content {
   padding: 1rem;
-  overflow-x: auto;
+  overflow-x: auto; /* mantém rolagem como fallback se necessário */
 }
 
 .code-content pre {
@@ -428,8 +428,12 @@ body {
   font-family: "Consolas", "Monaco", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: 1.5;
-  white-space: pre-wrap;        /* Mantém a indentação e permite quebra de linha */
-  word-break: break-word;       /* Quebra palavras longas, como e-mails */
+  white-space: pre-line;          /* Mantém quebras de linha reais, mas permite quebra automática */
+}
+
+.code-content code {
+  display: block;
+  overflow-wrap: anywhere;       /* Permite quebra em strings longas sem afetar indentação */
 }
 
 .line {
