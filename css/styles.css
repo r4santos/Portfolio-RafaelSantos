@@ -428,6 +428,8 @@ body {
   font-family: "Consolas", "Monaco", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: 1.5;
+  white-space: pre-wrap;        /* Mantém a indentação e permite quebra de linha */
+  word-break: break-word;       /* Quebra palavras longas, como e-mails */
 }
 
 .line {
